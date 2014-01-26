@@ -5,7 +5,7 @@ categories: dentistry
 img: /downloads/2014-01-17-brush-your-teeth/brush.jpg
 thumb: /downloads/2014-01-17-brush-your-teeth/brush-thumb.jpg
 author: David A Kimmel, DMD
-authorImg: /img/drKimmel.png
+authorImg: /img/drKimmel.jpg
 authorUrl: /users/user-drKimmel.html
 ---
 The American Dental Association recommends brushing your teeth at least twice a day.
