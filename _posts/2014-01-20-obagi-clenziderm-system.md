@@ -5,7 +5,7 @@ categories: obagi
 img: /downloads/2014-01-20-obagi-clenziderm-system/clenziderm.jpg
 thumb: /downloads/2014-01-20-obagi-clenziderm-system/clenziderm-thumb.jpg
 author: David A Kimmel, DMD
-authorImg: /img/drKimmel.jpg
+authorImg: /img/DrKimmel.jpg
 authorUrl: /users/user-drKimmel.html
 excerpt: The Obagi clenziderm system is the only prescription-strength acne treatment...
 ---

@@ -5,7 +5,7 @@ categories: dentistry
 img: /downloads/2014-01-18-what-are-cavities/cavity.jpg
 thumb: /downloads/2014-01-18-what-are-cavities/cavity-thumb.jpg
 author: David A Kimmel, DMD
-authorImg: /img/drKimmel.jpg
+authorImg: /img/DrKimmel.jpg
 authorUrl: /users/user-drKimmel.html
 ---
 Dental cavities are holes in teeth caused by tooth decay. Cavities are also referred to as caries.
