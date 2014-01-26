@@ -1,0 +1,135 @@
+---
+title: Contact Us
+---
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+	{% include css.html %}
+
+</head>
+<body class="page-contact">
+
+	<!-- preload loaders -->
+	<img style="display:none" src="img/loader-light.gif" alt="loader" title="loader">
+	<img style="display:none" src="img/loader-dark.gif" alt="loader" title="loader">
+	{% include header.html %}
+	<div id="header-space"></div>
+	<div id="page-content" role="main">
+
+		<!-- Google Maps -->
+		<div id="googlemaps" class="map hidden-phone"></div>
+
+		<div id="content">
+
+			<div class="address current">
+				<div class="address-inner">
+					<div class="title">
+						<h2 class="h3">Get in touch</h2>
+					</div>
+					<div class="text">
+						<p>Stop by the office or send us a message so that we can help you find the right treatment for you. Our well trained and experienced staff will help you to look and feel your best.</p>
+					</div>
+					<div class="title">
+						<h4>Office</h4>
+					</div>
+					<address>
+						<div class="row">
+							<div class="col-sm-4">
+								<b>Address:</b>
+							</div>
+							<div class="col-sm-8">
+								12124 Cobblestone Dr,<br />
+								Bayonet Point, FL 34667
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<b>Phone:</b>
+							</div>
+							<div class="col-sm-8">
+								(727) 862-8513
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<b>Fax:</b>
+							</div>
+							<div class="col-sm-8">
+								1800-2233-4455
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<b>Email:</b>
+							</div>
+							<div class="col-sm-8">
+								<a href="mailto:fcld@verizon.ney">FCLD@Verizon.net</a>
+							</div>
+						</div>
+					</address>
+					<hr />
+				</div><!-- .address-inner -->
+			</div><!-- .address -->
+			
+		</div><!-- #content -->
+
+	</div><!-- #page-content -->
+	{% include footer.html %}
+
+	{% include js.html %}
+
+	<!-- Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+	<script type="text/javascript" src="js/library/gmap/jquery.gmap.min.js"></script>
+
+	<script type="text/javascript">
+		/* ::
+		   :: 	Map Settings
+		   :: 	Find the Latitude and Longitude of your address:
+		   :: 	- http://universimmedia.pagesperso-orange.fr/geo/loc.htm
+		   :: 	- http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
+	 	   :: */
+		var googlemaps = $("#googlemaps");
+		if (googlemaps.length) {
+
+			googlemaps.gMap({
+				markers: [{
+					address		: "",
+					html		: 	'<h4>Office:</h4>'+
+					'<address>'+
+					'<div>'+
+					'<div><b>Address:</b></div>'+
+					'<div>12124 Cobblestone Dr,<br>Bayonet Point, Fl 34667</div>'+
+					'</div>'+
+					'<div>'+
+					'<div><b>Phone:</b></div>'+
+					'<div>(727) 862-8513</div>'+
+					'</div>'+
+					'<div>'+
+					'<div><b>Email:</b></div>'+
+					'<div><a href="mailto:fcld@verizon.net">FCLD@Verizon.net</a></div>'+
+					'</div>'+
+					'</address>',
+					latitude	: 28.333670,
+					longitude	: -82.684426
+				}],
+				icon: {
+					image: "img/pin.png",
+					iconsize: [35, 48],
+					iconanchor: [17, 48]
+				},
+				latitude: 28.333670,
+				longitude: -82.684426,
+				zoom: 16
+			});
+		}
+	</script>
+
+	<!--scripts for current page -->
+	<script type="text/javascript" src="js/page/contact.js"></script>
+
+</body>
+</html>

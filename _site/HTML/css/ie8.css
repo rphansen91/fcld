@@ -1,0 +1,57 @@
+/* ::
+::::: File 			: ie8.css
+::::: Description	: Theme styles for IE8 browser.
+:: */
+
+.link.btn, .link > .btn,
+.lightbox.btn,
+.lightbox > .btn,
+a.userpic > .btn,
+a.avatar > .btn {
+	background: #fff;
+}
+
+/* Fancybox */
+.fancybox-overlay {
+	background: #2d343e;
+}
+.fancybox-wrap .btn,
+.fancybox-wrap .btn:hover {
+	background: #fff;
+}
+.fancybox-title {
+	background: #fff;
+}
+body #page-header .breadcrumbs {
+	background: #fff;
+}
+#main-menu ul li,
+#custom-nav-bg {
+	background:  #2d343e;
+}
+
+#main-menu ul li > a {
+	color: #fff;
+}
+.tp-bannertimer {
+	background-color: #fff;
+}
+.tparrows.default,
+.tparrows.default:hover {
+	background: #fff;
+}
+
+.tp-bullets.simplebullets.round .bullet,
+.tp-bullets.simplebullets.round .bullet:hover,
+.tp-bullets.simplebullets.round .bullet.selected {
+	background: #fff;
+}
+.page-slider-wrap .btn {
+	background: #fff;
+}
+.slider-nav a.btn {
+	background: #fff;
+}
+.project-animated .project-content {
+	background: #fff;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+	{% include css.html %}
+
+</head>
+<body class="blog-grid">
+
+	<!-- preload loaders -->
+	<img style="display:none" src="img/loader-light.gif" alt="loader" title="loader">
+	<img style="display:none" src="img/loader-dark.gif" alt="loader" title="loader">
+
+	{% include header.html %}
+	<div id="header-space"></div>
+	<div id="page-content" role="main">
+		<div class="container">
+
+			<div id="content">
+
+				<header class="devider-bottom devider-heavy devider-margin-medium">
+					<h1 class="text-center">{{ page.title }}</h1>
+					<p class="excerpt text-center">{{ page.caption }}</p>
+				</header>
+				<section class="posts grid" data-columns="3">
+					{% if page.title == "Dentistry" %}
+						{% if site.categories.dentistry | size > 0 %}
+							{% for post in site.categories.dentistry %}
+								{% include thumbnail_a.html %}
+							{% endfor %}
+						{% else %}
+							<p class="text-center">Their are currently no posts on this topic.</p>
+						{% endif %}
+					{% elsif page.title == "Cosmetics" %}
+						{% if site.categories.cosmetics | size > 0 %}	
+							{% for post in site.categories.cosmetics %}
+								{% include thumbnail_a.html %}
+							{% endfor %}
+						{% else %}
+							<p class="text-center">Their are currently no posts on this topic.</p>
+						{% endif %}
+					{% elsif page.title == "Obagi" %}
+						{% if site.categories.obagi | size > 0 %}
+							{% for post in site.categories.obagi %}
+								{% include thumbnail_a.html %}
+							{% endfor %}
+						{% else %}
+							<p class="text-center">Their are currently no posts on this topic.</p>
+						{% endif %}
+					{% elsif page.title == "Spa" %}
+						{% if site.categories.spa | size > 0 %}
+							{% for post in site.categories.spa %}
+								{% include thumbnail_a.html %}
+							{% endfor %}
+						{% else %}
+							<p class="text-center">Their are currently no posts on this topic.</p>
+						{% endif %}
+					{% else %}
+						{% if site.categories.longboarding | size > 0 %}
+							{% for post in site.categories.longboarding %}
+								{% include thumbnail_a.html %}
+							{% endfor %}
+						{% else %}
+							<p class="text-center">Their are currently no posts on this topic.</p>
+						{% endif %}
+					{% endif %}
+					
+				</section><!-- .posts -->				
+
+			</div><!-- #content -->
+
+		</div><!-- .container -->
+	</div><!-- #page-content -->
+	{% include footer.html %}
+	
+	{% include js.html %}
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+	{% include css.html %}
+
+</head>
+<body class="page-team-member">
+
+	<!-- preload loaders -->
+	<img style="display:none" src="/img/loader-light.gif" alt="loader" title="loader">
+	<img style="display:none" src="/img/loader-dark.gif" alt="loader" title="loader">
+
+	{% include header.html %}
+	<div id="header-space"></div>
+	<aside id="page-header" class="page-header-image page-header-big fonts-white" style="background-image:url({{ page.image }})">
+		<div class="page-header-inner">
+			<div class="page-header-content">
+				<div class="container">
+
+					<h1 class="hide-to-left">{{ page.name }}</h1>
+					<p class="hide-to-right lead">{{ page.rank }}</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="breadcrumbs hide-to-bottom">
+			<div class="container">
+				<ul>
+					<li><a href="/index.html" class="home"></a></li>
+					<li><a href="#">Pages</a></li>
+					<li class="current"><a href="page-user.html">Team member</a></li>
+				</ul>
+			</div>
+		</div><!-- .breadcrumbs -->
+	</aside>
+	<div id="page-content" role="main">
+		<div class="container">
+
+			<!-- CONTENT -->
+			<div id="content">
+				<div class="container-out container-light">
+
+					<div class="title">
+						<h2 class="h3">About me</h2>
+					</div>
+
+					<div class="text">
+						<p>{{ page.about }}</p>
+					</div>
+
+					<div class="push"></div>
+
+					<div class="row row-inline">
+						<div class="col-sm-2">
+
+							<p><strong>Website:</strong></p>
+
+						</div><!-- .col-sm-4 -->
+						<div class="col-sm-10">
+
+							<p><a href="http://www.cosmeticsmile.net" target="_blank">http://www.CosmeticSmile.net</a></p>
+
+						</div><!-- .col-sm-4 -->
+					</div><!-- .row -->
+
+				</div><!-- .container-out -->
+				<div class="container-out container-light">
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="title title-section">
+								<h2>My Skills</h2>
+								<p>Trained and certified!</p>
+								<span class="sticker">
+									<i class="icon fa fa-tasks"></i>
+								</span>
+							</div><!-- .title.title-section -->
+
+						</div><!-- .col-sm-12 -->
+					</div><!-- .row -->
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="skill-title">
+								<h5>{{ page.skill }}</h5>
+							</div><!-- .skill-title -->
+							<div class="skill">
+								<div class="bar animated" data-value="{{page.skill_v}}">0%</div>
+							</div>
+
+							<div class="skill-title">
+								<h5>{{ page.skill1 }}</h5>
+							</div><!-- .skill-title -->
+							<div class="skill">
+								<div class="bar animated"  data-value="{{page.skill1_v}}">0%</div>
+							</div>
+
+							<div class="skill-title">
+								<h5>{{ page.skill2 }}</h5>
+							</div><!-- .skill-title -->
+							<div class="skill">
+								<div class="bar animated" data-value="{{page.skill2_v}}">0%</div>
+							</div>
+
+							<div class="skill-title">
+								<h5>{{ page.skill3 }}</h5>
+							</div><!-- .skill-title -->
+							<div class="skill">
+								<div class="bar animated" data-value="{{page.skill3_v}}">0%</div>
+							</div>
+
+						</div><!-- .col-sm-12 -->
+					</div><!-- .row -->
+				</div><!-- .container-out -->
+				<div class="row">
+					<div class="col-sm-12">
+
+						<div class="title title-section">
+							<h2>My Works</h2>
+							<p>Posts written by {{ page.title }}</p>
+							<span class="sticker">
+								<i class="icon icomoon-droplet"></i>
+							</span>
+						</div><!-- .title.title-section -->
+
+					</div><!-- .col-sm-12 -->
+				</div><!-- .row -->
+				<div class="row">
+					<div class="col-sm-12">
+						{% assign count = true %}
+						<section class="projects grid" data-columns="3">
+							{% for post in site.posts %}
+								{% if post.author == page.title %}
+									{% include thumbnail_a.html %}
+									{% assign count = false %}
+								{% endif %}
+							{% endfor %}
+						</section><!-- .projects -->
+						{% if count %}
+							<p>Their are currently no posts by this user.</p>
+						{% endif %}
+
+					</div><!-- .col-sm-12 -->
+				</div><!-- .row -->
+			</div><!-- #content -->
+
+		</div><!-- .container -->
+	</div><!-- #page-content -->
+	{% include footer.html %}
+
+	{% include js.html %}
+
+</body>
+</html>

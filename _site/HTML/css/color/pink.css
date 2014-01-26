@@ -1,0 +1,310 @@
+
+/* ::
+:::::
+::::: Theme 		: JETS
+::::: Theme URI		: http://labs.funcoders.com/Jets
+:::::
+::::: File 			: pink.css
+::::: Description	: Pink color set.
+:::::
+:: */
+
+
+
+/* ::::::::::::: */
+/* : Body copy : */
+/* ::::::::::::: */
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover,
+a,
+.dropcap.clean {
+	color: #ff2d55;
+}
+.highlight {
+	background-color: #ff2d55;
+}
+
+/* ::::::::::::::::: */
+/* : END Body copy : */
+/* ::::::::::::::::: */
+
+
+
+/* :::::::::::: */
+/* : Dropcaps : */
+/* :::::::::::: */
+.dropcap.clean {
+	color: #ff2d55;
+}
+/* :::::::::::::::: */
+/* : END Dropcaps : */
+/* :::::::::::::::: */
+
+
+
+/* ::::::::::::: */
+/* : Bockquote : */
+/* ::::::::::::: */
+blockquote:before,
+blockquote .author {
+	color: #ff2d55;
+}
+/* ::::::::::::::::: */
+/* : END Bockquote : */
+/* ::::::::::::::::: */
+
+
+
+/* :::::::: */
+/* : List : */
+/* :::::::: */
+.arrow li:before, .circle li:before, .check li:before,
+.plus li:before, .dash li:before {
+	color: #ff2d55;
+}
+/* :::::::::::: */
+/* : END List : */
+/* :::::::::::: */
+
+
+
+/* ::::::::::: */
+/* : Buttons : */
+/* ::::::::::: */
+.btn {
+	background-color: #ff2d55;
+	border: 1px solid #ff2d55;
+}
+	.btn:hover {
+		background-color: #ff5777;
+		border-color: #ff5777;
+	}
+	.btn:active {
+		border-color: #ff2d55;
+	}
+/* ::::::::::::::: */
+/* : END Buttons : */
+/* ::::::::::::::: */
+
+
+
+/* :::::::::::: */
+/* : Progress : */
+/* :::::::::::: */
+.skill .bar,
+.progress .bar {
+	background-color: #ff2d55;
+}
+/* :::::::::::::::: */
+/* : END Progress : */
+/* :::::::::::::::: */
+
+
+
+/* ::::::::::::::: */
+/* : Breadceumbs : */
+/* ::::::::::::::: */
+body #page-header .breadcrumbs ul li.current a,
+body #page-header .breadcrumbs ul li a:hover {
+	color: #ff2d55;
+}
+/* ::::::::::::::::::: */
+/* : END Breadceumbs : */
+/* ::::::::::::::::::: */
+
+
+
+/* :::::::::::::::: */
+/* : Filter & Nav : */
+/* :::::::::::::::: */
+.project-filter ul li a:hover,
+.project-filter ul li a.active {
+	color: #ff2d55;
+}
+.project-filter ul:hover li.selector {
+	background-color: #ff2d55;
+}
+/* :::::::::::::::::::: */
+/* : END Filter & Nav : */
+/* :::::::::::::::::::: */
+
+
+
+/* Twitter */
+.tweet-heading .title a:hover,
+.tweet-content .tweet-actions a:hover {
+	color: #ff2d55;
+}
+
+/* Main menu */
+#main-menu > li:hover > a,
+#main-menu > li.current > a {
+	color: #ff2d55;
+}
+
+/* Section title */
+.title.title-section .sticker .icon {
+	background-color: #ff2d55;
+}
+.title.title-section .sticker .icon:after {
+	border-top-color: #ff2d55;
+}
+/*Nav list */
+#page-content .nav ul li a:hover {
+	color: #ff2d55;
+}
+
+/* Date */
+.article-date {
+	background-color: #ff2d55;
+}
+.article-date:after {
+	border-top-color: #ff2d55;
+}
+
+/* Article Nav */
+.article-nav ul li.selector a:hover {
+	background-color: #ff2d55;
+}
+.article-nav a:hover,
+.article-nav a:hover:before,
+#page-content .article-nav a:hover,
+#page-content .article-nav a:hover:before {
+	color: #ff2d55;
+}
+
+/* Tags */
+#footer .tags p a:hover,
+.tags p a:hover {
+	background: #ff2d55;
+}
+
+
+/* :::: */
+/* : POST TYPE : Single
+/* :::: */
+.post-content > .type {
+	background-color: #ff2d55;
+}
+.post-content > .type:after {
+	border-top-color: #ff2d55;
+}
+
+/* Timeline */
+.timeline li.year {
+	background-color: #ff2d55;
+}
+
+
+
+/* :::::::::::: */
+/* : Icon Box : */
+/* :::::::::::: */
+
+/* Style 2 & 3*/
+.container-dark .iconbox.iconbox-style2 .iconbox-heading .icon:before,
+.container-dark .iconbox.iconbox-style3 .iconbox-heading .icon:before,
+.container-dark .iconbox.iconbox-style2 .iconbox-heading .icon:after,
+.container-dark .iconbox.iconbox-style3 .iconbox-heading .icon:after,
+.container-image .iconbox.iconbox-style2 .iconbox-heading .icon:before,
+.container-image .iconbox.iconbox-style3 .iconbox-heading .icon:before,
+.container-image .iconbox.iconbox-style2 .iconbox-heading .icon:after,
+.container-image .iconbox.iconbox-style3 .iconbox-heading .icon:after {
+	background-color: rgba(255, 45, 85, 0.5);
+}
+/* :::::::::::::::: */
+/* : END Icon Box : */
+/* :::::::::::::::: */
+
+
+
+/* ::::::::::::::::: */
+/* : Call 2 Action : */
+/* ::::::::::::::::: */
+
+/* Colored */
+.call2action.call2action-colored {
+	border-color: #ff2d55;
+	background-color: #ff5777;
+}
+/* ::::::::::::::::::::: */
+/* : END Call 2 Action : */
+/* ::::::::::::::::::::: */
+
+
+
+/* ::::::::::::::: */
+/* : Testimonial : */
+/* ::::::::::::::: */
+
+/* Colored */
+.testimonial-wrap.testimonial-colored .testimonial-inner {
+	border-color: #ff2d55;
+	background-color: #ff5777;
+}
+.testimonial-wrap.testimonial-colored .testimonial-outer:before {
+	border-top-color: #ff2d55;
+}
+	.testimonial-wrap.testimonial-colored .testimonial-outer:after {
+		border-top-color:  #ff5777;
+	}
+/* ::::::::::::::::::: */
+/* : END Testimonial : */
+/* ::::::::::::::::::: */
+
+
+
+/* ::::::: */
+/* : Tab : */
+/* ::::::: */
+
+/* Colored */
+.tab.tab-colored .tab-heading {
+	border-color: #ff2d55;
+	background-color: #ff5777;
+}
+	.tab.tab-colored .tab-heading li {
+		border-color: #ff2d55;
+	}
+		.tab.tab-colored .tab-heading li:hover a,
+		.tab.tab-colored .tab-heading li.current a {
+			background-color: #ff2d55;
+		}
+/* ::::::::::: */
+/* : END Tab : */
+/* ::::::::::: */
+
+
+
+/* ::::::::::::: */
+/* : Accordion : */
+/* ::::::::::::: */
+.accordion > div.active .accordion-heading a,
+.accordion > div .accordion-heading a:hover {
+	color: #ff2d55;
+}
+
+/* Colored */
+.accordion.accordion-colored .accordion-heading {
+	border-color: #ff2d55;
+	background-color: #ff5777;
+}
+.accordion.accordion-colored .active .accordion-heading a,
+.accordion.accordion-colored .accordion-heading a:hover {
+	background-color: #ff2d55;
+}
+/* ::::::::::::::::: */
+/* : END Accordion : */
+/* ::::::::::::::::: */
+
+
+
+/* ::::::::::::::::: */
+/* : Pricing Table : */
+/* ::::::::::::::::: */
+.pricing.pricing-style1 .pricing-content h5 {
+	color: #ff2d55;
+}
+/* ::::::::::::::::::::: */
+/* : END Pricing Table : */
+/* ::::::::::::::::::::: */

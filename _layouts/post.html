@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+	
+	{% include css.html %}
+
+</head>
+<body class="blog-grid">
+
+	<!-- preload loaders -->
+	<img style="display:none" src="/img/loader-light.gif" alt="loader" title="loader">
+	<img style="display:none" src="/img/loader-dark.gif" alt="loader" title="loader">
+	{% include header.html %}
+	<div id="header-space"></div>
+	<div id="page-content" role="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div id="content">
+
+						<header class="devider-bottom devider-heavy devider-margin-medium">
+							<p class="meta">
+								<span>Posted by <a href="{{ page.authorUrl }}">{{ page.author }}</a></span>
+							</p><!-- .meta -->
+							<h1>{{ page.title }}</h1>
+						</header>
+
+						<article class="post post-single post-type-text">
+							<div class="post-heading">
+
+								<div class="thumbnail">
+									<img src="{{ page.img }}" title="{{ page.title }}" />
+								</div><!-- .thumbnail -->
+
+							</div><!-- .post-heading -->
+							<div class="post-content">
+								<div class="content-left">
+
+									<div class="article-date">
+										<span class="type"></span>
+										<span class="day">{{ page.date | date: "%d" }}</span>
+										<span class="month">{{ page.date | date: "%b" }}</span>
+										<span class="year">{{ page.date | date: "%Y" }}</span>
+									</div><!-- .date -->
+								</div><!-- .content-left -->
+								<div class="content-right" id = "post-font">
+										{{ page.content | markdownify }}
+								</div><!-- .content-right -->
+							</div><!-- .post-content -->
+						</article><!-- .post -->
+
+						<section class="article-author">
+							<div class="author-heading">
+
+								<div class="avatar">
+									<a href="{{ page.authorUrl }}" title="{{ page.author }}" rel="author"><img src="{{ page.authorImg }}" title="{{ page.author }}"></a>
+								</div>
+
+							</div><!-- .author-heading -->
+							<div class="author-content">
+
+								<div class="title title-main">
+									<h4><a href="{{ page.authorUrl }}" title="{{ page.author }}" rel="author">{{ page.author }}</a></h4>
+								</div><!-- .title -->
+
+							</div><!-- .author-content -->
+						</section><!-- .article-author -->
+					</div>
+				</div>
+			</div><!-- .row -->
+			<!-- Related Posts -->
+			<div class="container-out container-light">
+				<div class="title title-section">
+					<h2>Related Posts</h2>
+					<span class="sticker">
+						<i class="icon fa fa-bullhorn"></i>
+					</span>
+				</div><!-- .title.title-section -->
+			</div><!-- .container-out -->
+
+			<div class="container-out">
+
+				<div class="carousel-wrap animation animation-from-left">
+					<ul class="carousel-nav">
+						<li><a href="#" class="btn btn-icon-prev prev"></a></li>
+						<li><a href="#" class="btn btn-icon-next next"></a></li>
+					</ul><!-- .carousel-nav -->						
+					<div class="carousel" data-visible="3">
+						{% for post in site.related_posts limit:3 %}
+							{% include thumbnail.html %}
+						{% endfor %}
+					</div><!-- .carousel -->
+				</div><!-- .carousel-wrap -->
+			</div><!-- .container-out -->
+
+		</div><!-- .container -->
+		<p></p>
+	</div><!-- #page-content -->
+	{% include footer.html %}
+
+	{% include js.html %}
+
+</body>
+</html>

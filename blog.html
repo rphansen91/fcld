@@ -1,0 +1,44 @@
+---
+title: FCLD Blog
+---
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+	{% include css.html %}
+
+</head>
+<body class="blog-grid">
+
+	<!-- preload loaders -->
+	<img style="display:none" src="img/loader-light.gif" alt="loader" title="loader">
+	<img style="display:none" src="img/loader-dark.gif" alt="loader" title="loader">
+	{% include header.html %}
+	<div id="header-space"></div>
+	<div id="page-content" role="main">
+		<div class="container">
+
+			<div id="content">
+
+				<header class="devider-bottom devider-heavy devider-margin-medium">
+					<h1 class="text-center">The Florida Center For Laser Dentistry</h1>
+					<p class="excerpt text-center">All the latest news and updates in modern dentistry.</p>
+				</header>
+				<section class="posts grid" data-columns="3">
+					{% for post in site.posts limit:3 %}
+						{% include thumbnail_a.html %}
+					{% endfor %}					
+				</section><!-- .posts -->
+
+			</div><!-- #content -->
+
+		</div><!-- .container -->
+	</div><!-- #page-content -->
+	{% include footer.html %}
+	
+	{% include js.html %}
+
+</body>
+</html>

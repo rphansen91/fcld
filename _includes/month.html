@@ -1,0 +1,16 @@
+{% assign month_i = include.month %}
+{% assign year_i = include.year %}
+<header class="devider-bottom devider-heavy devider-margin-medium">
+	<h1>{{ month_i }} {{ year_i }}</h1>
+</header>
+<section class="posts">
+	{% for post in site.posts %}
+		{% assign month = [post.date | date: "%B"] %}
+		{% assign year = [post.date | date: "%Y"] %}
+		{% if year_i == year %}
+			{% if month_i == month %}
+				{% include description.html %}
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+</section>
