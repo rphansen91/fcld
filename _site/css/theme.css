@@ -5238,6 +5238,11 @@ body.mobile .project-carousel .teaser .teaser-info {
 		color: #fff;
 	}
 
+/* User Bio */
+#shadow {
+	text-shadow: 2px 2px #333;
+}
+
 /* Logo */
 #footer .logo {
 	opacity: 0.4;

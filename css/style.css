@@ -12,6 +12,9 @@ a {
 li {
 	font-weight: bold;
 }
+#disqus_thread {
+	color: black !important;
+}
 #top{
 	position: relative;
 	display: inline;

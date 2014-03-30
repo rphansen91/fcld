@@ -189,6 +189,34 @@ title: FCLD Home
 		<div class="container">
 
 			<div id="content">
+				
+
+				<div class="container-out container-light">
+
+					<div class="title title-section">
+						<h2>Recent news from the blog</h2>
+						<p>Enjoy a quick breakdown of current events in dentistry.</p>
+						<span class="sticker">
+							<i class="icon fa fa-bullhorn"></i>
+						</span>
+					</div><!-- .title.title-section -->
+
+				</div><!-- .container-out -->
+				<div class="container-out">
+
+					<div class="carousel-wrap animation animation-from-left">
+						<ul class="carousel-nav">
+							<li><a href="#" class="btn btn-icon-prev prev"></a></li>
+							<li><a href="#" class="btn btn-icon-next next"></a></li>
+						</ul><!-- .carousel-nav -->
+						<div class="carousel" data-visible="3">
+							{% for post in site.posts limit:3 %}
+								{% include thumbnail.html %}
+							{% endfor %}
+						</div><!-- .carousel -->
+					</div><!-- .carousel-wrap -->
+
+				</div><!-- .container-out -->
 				<div class="container-out container-light">
 
 					<div class="title title-section">
@@ -221,33 +249,6 @@ title: FCLD Home
 						</div><!-- .col-sm-4 -->
 					</div>
 				</div>	
-
-				<div class="container-out container-light">
-
-					<div class="title title-section">
-						<h2>Recent news from the blog</h2>
-						<p>Enjoy a quick breakdown of current events in dentistry.</p>
-						<span class="sticker">
-							<i class="icon fa fa-bullhorn"></i>
-						</span>
-					</div><!-- .title.title-section -->
-
-				</div><!-- .container-out -->
-				<div class="container-out">
-
-					<div class="carousel-wrap animation animation-from-left">
-						<ul class="carousel-nav">
-							<li><a href="#" class="btn btn-icon-prev prev"></a></li>
-							<li><a href="#" class="btn btn-icon-next next"></a></li>
-						</ul><!-- .carousel-nav -->
-						<div class="carousel" data-visible="3">
-							{% for post in site.posts limit:3 %}
-								{% include thumbnail.html %}
-							{% endfor %}
-						</div><!-- .carousel -->
-					</div><!-- .carousel-wrap -->
-
-				</div><!-- .container-out -->
 				<div class="container-out container-light">
 
 					<div class="title title-section">
@@ -310,7 +311,7 @@ title: FCLD Home
 							</div>
 							<div class="member-heading">
 								<a href="users/user-alex.html">
-									<img src="img/alex.jpg" title="Alexandra Simotas">
+									<img src="img/alex2.jpg" title="Alexandra Simotas">
 								</a>
 								<div class="title">
 									<h4><a href="users/user-alex.html">Alexandra Simotas</a></h4>
